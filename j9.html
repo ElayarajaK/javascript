@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+            <div class="container">
+                <label>Select your product</label>
+
+               
+
+                <input type="text" onblur="fun1()" value="angular" id="name" placeholder="place your name"/>
+
+            </div>
+           
+        </form>
+
+        <script>
+
+           let values=0;
+           
+            let name = document.getElementById("name");
+            let my_name=name.value;
+            /**function declaration**/
+            function asAdmin(values,my_name){
+                values= ++values;
+                document.writeln("<h1>i am from function : "+values+", "+my_name+"</h1>");
+            }
+            function Fun1(){
+                my_name=name.value;
+                asAdmin(values,my_name)
+            }
+            //calling function
+           /* asAdmin(values,my_name);
+            asAdmin(values);
+            asAdmin(values);
+            asAdmin(values);
+            asAdmin(values);*/
+
+        </script>
+    </body>
+</html>

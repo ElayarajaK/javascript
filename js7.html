@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        
+        <script>
+            /*
+                    ()?    :
+
+                (condition)?     true stmt : false stmt
+            */
+
+                let marks =Number(prompt("Enter your Marks should be in digits"))
+            
+                /*let result=(marks>35)? "<h1>your pass</h1>" : "<h1>your fail</h1>";*/
+
+               let result = (marks<35)? ((marks<10)&&(marks>0))? 
+                "marks is below 10" : "marks is above 10" 
+                : "<h1>your pass</h1>";
+
+                document.writeln("<h1>"+result+"</h1>")
+        </script>
+    </body>
+
+</html>
