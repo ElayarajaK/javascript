@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <div>
+
+                <input type="name" id="sname" placeholder="name" onclick="fun1()"/>
+            </div>
+            <br/>
+            <div>
+
+                <input type="number" id="age" placeholder="name" onclick="fun1()"/>
+            </div>
+
+            <div>
+
+                <input type="submit" id="submit"  placeholder="name" onblur="validate()"/>
+            </div>
+
+
+            <p id="print"></p>
+
+    </head>
+    <body>
+
+        <script>
+            let name;
+            let age;
+
+            function validate(){
+                name=document.getElementById("sname").value;
+                age=Number(document.getElementById("age").value);
+                
+                /*do{
+                    document.writeln("my age"+age);
+                    age--;
+                }while(age>18);*/
+                
+                return name+","+age;
+            }
+
+            document.writeln(validate());
+
+
+
+
+
+
+            
+           
+        </script>
+    </body>
+</html>

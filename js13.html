@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <input type="number" id="value1" onblur="getValue()" />
+
+        <h2 id="print"></h2>
+
+        <script>
+
+getValue= () => {
+                let temp1 =document.getElementById("value1").value
+                
+                if((temp1 != 18) && (temp1<18)){
+                    document.getElementById("print").innerHTML="<u>lesstha 18</u>";
+                }
+                else{
+                    document.getElementById("print").innerHTML="<u>i am from js</u>";
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>

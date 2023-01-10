@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        
+        <h2 id="print"></h2>
+
+        <script>
+
+
+                let Employee={
+                    eid:301,
+                    ename:"Ganesh",
+                    eaddress:{
+                        House_no:3021,
+                        Streetname:"Ganthi road",
+                        Dst:"vellore",
+                        State:"Tamilnadu"
+                    },
+
+                    salary:25000
+                };
+
+                document.writeln(Employee.ename);
+                document.writeln(Employee.eaddress.State);
+
+                for(let temp in Employee){
+
+                   
+                    if(temp=="eaddress"){
+                        for(let temp1 in Employee[temp])
+                        {
+                            document.writeln("<b> key : "+temp1+ " value : "+ 
+                                Employee.eaddress[temp1] +"</b>");
+                            
+                        }
+                    }
+                }
+                
+                
+        </script>
+    </body>
+</html>

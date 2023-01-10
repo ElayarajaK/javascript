@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        
+        <h2 id="print"></h2>
+
+        <script>
+
+
+                let StudentDetails={
+                 //key : value(,)seperator  (1 pair)
+                    sid:2011,
+                    sname:"raja",
+                    saddress:"chennai",
+                    pincode:601101
+                };
+
+
+                alert(typeof(value));
+               
+                document.writeln(StudentDetails.sid);
+                document.writeln(StudentDetails.sname);
+                document.writeln(StudentDetails.saddress);
+                document.writeln(StudentDetails.pincode);
+                
+                document.writeln("<br/>========================<br/>")
+
+                for(let temp in StudentDetails){
+                    document.writeln("Object key : "+temp +
+                    ", and values : "+ StudentDetails[temp]+"<br/>");
+                }
+
+                
+        </script>
+    </body>
+</html>

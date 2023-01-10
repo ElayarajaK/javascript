@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <div>
+
+                <input type="number" id="sname" placeholder="number" onclick="fun1()"/>
+            </div>
+            <br/>
+            <div>
+
+                <input type="number" id="age" placeholder="name" onclick="fun1()"/>
+            </div>
+
+            <div>
+
+                <input type="submit" value="Add" id="submit"  placeholder="name" onblur="add()"/>
+            </div>
+
+
+            <p id="print"></p>
+
+    </head>
+    <body>
+
+        <script>
+            let name="raja";
+            let age=18;
+
+            add = () => {
+                number1=Number(document.getElementById("sname").value);
+                number2=Number(document.getElementById("age").value);
+                
+                
+
+                if((number1<10)&&(number2 <20)){
+                    document.getElementById("print").innerHTML="<h1>Entered value is "+number1+ "should greater 10 number 2 should greater twenty</h1>";
+                }else{
+                    document.getElementById("print").innerHTML=number1+number2;
+                }
+
+            }
+
+            
+            
+
+
+
+            
+           
+        </script>
+    </body>
+</html>
