@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                <input type="radio" name="colors" id="red" onclick="red()" />
+                <label for="red">red</label>
+                <input type="radio" name="colors" id="green" onclick="green()"/>
+                <label for="red">red</label>
+                <input type="radio" name="colors" id="yellow" onclick="yellow()"/>
+                <label for="red">red</label>
+
+            </div>
+        </div>
+
+        <script>
+
+                  let marks=[10,20,30,40,50,60,70,80,90,100];
+                  let values=marks.filter((param1) => (param1>30)&&(param1<80) )
+                  document.writeln(values);
+                  let modify =marks.join(";");
+                  document.writeln(modify);
+
+                 red=()=>{
+                    let value=document.getElementById("red");
+
+                    value.style.backgroundColor="yellow"
+                    console.log(value)
+                    document.body.style.background="red";
+                  }
+
+                  function green(){
+                  
+                  document.body.style.background="green";
+                }
+
+
+        </script>
+    </body>
+</html>

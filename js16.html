@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        <script>
+            let arr1=[10,20,30,40,50,"Hello",true];
+
+            document.writeln(arr1.length);//7
+            document.writeln(arr1[5]);
+
+            document.writeln(arr1[10]);
+
+            for(let i=0;i<arr1.length;i++){
+                document.writeln("<br/>"+arr1[i] );
+            }
+
+            document.writeln("<br/>========= in =========");
+
+            for(let temp in arr1){
+                document.writeln("<br/>"+arr1[temp] );
+            }
+            document.writeln("<br/>========= of =========");
+            for(let temp of arr1){
+                document.writeln("<br/>"+temp );
+            }
+
+
+            console.log(arr1);
+
+            let obj={name:"Raja",address:"chennai"};
+            console.log(obj);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            let arm=[20,30,{name:"raja",addres:"chennai"},[20,30,{name:"java",address:"banglore"}],true];
+
+           // document.writeln(arm[2]);
+
+           // document.writeln(typeof[3]);
+
+            for(let temp of arm){
+
+                
+                if(typeof(temp) == "object")
+                {
+                    for(let temp1 in temp){
+                        document.writeln(temp[temp1]);
+                        
+                    }
+
+                    //document.writeln(temp.name);
+                    //console.log(temp);
+                }
+
+            }
+        </script>
+    </body>
+</html>

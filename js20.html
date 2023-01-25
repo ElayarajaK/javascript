@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            function sorting(para1,para2){
+                if(para1>para2){
+                    return 1;
+                }
+                if(para1 == para2){
+                    return 0;
+                }
+                if(para1 < para2){
+                    return -1;
+                }               
+
+            }
+            let marks=[20,45,10,50,30,100,90,34,50];
+            marks.sort(sorting);
+            document.writeln(marks);
+
+            let salary=[15000,50000,100000,10000,5000,60000,30000]
+
+            salary.sort((a,b) => b - a)
+
+            document.writeln("<h1>"+salary+"</h1>");
+
+
+            let arr=[5,3,10];
+
+            for(let i=0;i<arr.length;i++){
+
+            }
+
+            let value1=3000;
+            let value2=200;
+
+            for(let i=0;i<arr.length;i++){
+
+
+            if(value1 < value2)
+           {
+            let temp=value2;
+            value2=value1;
+            value1=temp;
+        }
+
+    }            document.writeln("<h1>"+value1 +","+value2+"</h1>");
+
+
+        </script>
+    </body>
+</html>
